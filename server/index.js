@@ -17,6 +17,6 @@ app.get('/opening', opening)
 app.use('/mal', mal)
 
 // listen
-srv.listen(3001, () => {
-  console.log('listening on 3001')
+srv.listen(process.env.PORT, () => {
+  console.log('listening on ' + process.env.PORT)
 })
