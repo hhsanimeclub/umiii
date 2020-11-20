@@ -5,7 +5,7 @@ export const DEVICE_TYPE = 'com.crunchyroll.windows.desktop'
 export const LOCALE = () => localStorage.getItem('locale') || 'enUS'
 export const VERSION = '1.1.20.0'
 export const CONNECTIVITY_TYPE = 'ethernet'
-export const UMI_SERVER = process.env.NODE_ENV === 'production' ? 'https://umi-watch-api.now.sh' : 'http://localhost:3001'
+export const UMI_SERVER = process.env.NODE_ENV === 'production' ? 'https://umiserver.herokuapp.com' : 'http://localhost:3001'
 
 let source = CancelToken.source()
 
